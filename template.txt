@@ -1,0 +1,5 @@
+set
+
+USAGE_subscriber_no               (a) (010) = "{subscriber_no}"
+USAGE_unit_esn                    (a) (020) = "{unit_esn}"
+USAGE_imsi                        (a) (015) = "{imsi}"
