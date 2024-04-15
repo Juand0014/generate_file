@@ -14,11 +14,11 @@ FROM python:3-alpine AS runner
 WORKDIR /app
  
 COPY --from=builder /app/venv venv
-COPY main.py main.py
+COPY app.py app.py
  
 ENV VIRTUAL_ENV=/app/venv
 ENV PATH="$VIRTUAL_ENV/bin:$PATH"
  
 EXPOSE 8000
  
-CMD [ "uvicorn", "--host", "0.0.0.0", "main:app" ]
+CMD [ "uvicorn", "--host", "0.0.0.0", "app:app" ]
